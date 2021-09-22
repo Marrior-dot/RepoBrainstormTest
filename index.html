@@ -13,11 +13,12 @@
 
     <link rel="shortcut icon" href="./img/Logo-fundo-escuro.png" />
 
-    <!-- Carouselda hero -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="./css/carousel.css">
-
-    <!-- folha de estilos -->
+    <!-- Carousel da hero -->
+	<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+        <!-- folha de estilos -->
     <link rel="stylesheet" href="./css/style.css">
 
     <!--fonte: Poppins-->
@@ -122,13 +123,11 @@
                     </ul>
                </nav>
 			    </div>
-			    <div class="wrapper">
-  <div class="carousel-container">
-    <div class="carousel">
-      <div id="skyline" class="carousel__item">
-<div class="ellipse-full"></div>
-        <div class="ellipse-dotted"></div>
-           <div class="l-hero">
+	
+			    <div class="MYswiper mySwiperhero">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+ <div class="l-hero">
                 <div class="l-display">
                     <section class="display-hero">
                         <h1>Nós incentivamos suas ideias</h1>
@@ -145,49 +144,15 @@
                 </div>
 
             </div>
-      </div>
-      <div id="second_item" class="carousel__item">
-<div class="l-hero2">
-                <div class="l-display2">
-                    <section class="display-hero">
-                        <h1>Quer aprender a programar?</h1>
-                        <p>Dê os seus primeiros passos na programação com um curso que se preocupa em te preparar para entrar no mercado de trabalho 
-                            
-                        </p>
-			 <button class="btn-sub"><img src="img/sign-in-alt-solid 1.svg">
-                                Inscreva-se</button>
-                    </section>
-                </div>
+	</div>
 
-                <div class="l-banner2">
-                    <img src="img/Work time-amico 1.svg" alt="computador com logo no fundo" class="s-banner">
-		    <div class="icons">
-			    <img src="img/jS.svg" alt="">
-			    <img src="img/html5-brands 1.svg" alt="">
-			    <img src="img/css3-alt-brands 1.svg" alt="">
-		    </div>
-                </div>
-
-            </div>
+        <div class="swiper-slide">Slide 2</div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
     </div>
-  <!--  
-    <div id="controls" class="controls">
-      <a href="#skyline" class="controls__dot">
-      </a>
-      <a href="#second_item" class="controls__dot">
-      </a>
-    </div>
-  -->
-  </div>
-  <div id="controls" class="controls">
-      <a href="#skyline" id = "skip1" autofocus class="controls__dot">
-      </a>
-      <a href="#second_item" id = "skip2" class="controls__dot">
-      </a>
-    </div>
-</div>
-<!--
+    <!--
             <div class="l-hero">
                 <div class="l-display">
                     <section class="display-hero">
@@ -205,18 +170,19 @@
                 </div>
 
             </div>
--->
+    -->
         </header>
-	<!--
+	
         <div class="ellipse-full"></div>
         <div class="ellipse-dotted"></div>
         <div class="ellipse-purple"></div>
         <div class="ellipse-orange"></div>
-	-->
+
         <span class="raio-roxo-1"><img src="./img/r1.png" alt=""></span>
         <span class="raio-roxo-2"><img src="./img/r1.png" alt=""></span>
         <span class="raio-branco"><img src="./img/r2.png" alt=""></span>
     </div>
+    
     <!-- header -->
 
 
@@ -770,16 +736,11 @@
         crossorigin="anonymous"></script>
 
     <!-- script -->
-    <script src="js/hero.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/toggler.js"></script>
-
-    <!-- Bootstrap JS 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
--->
-</body>
+	<!--swipperjs -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/swipper.js"  ></script>
+   </body>
 
 </html>

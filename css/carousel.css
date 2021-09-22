@@ -1,111 +1,31 @@
-.carousel-container {
-  position: relative;
-}
+.MYswiper {
+        width: 100%;
+        height: 100%;
+      }
 
-.carousel {
-  display: flex;
-  scroll-snap-type: x mandatory;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  -ms-overflow-style: none;
-  width: 80vw;
-}
-#second_item{
-	margin-top:-7.5rem;
-}
-.carousel::-webkit-scrollbar{
-	display: none;
-}
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
 
-.carousel__item {
-  width: 100%;
-  flex-shrink: 0;
-  scroll-snap-align: start;
-}
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
 
-.carousel__image {
-  display: block;
-}
-
-.controls {
-  width: 7.4rem;
-  display:flex;
-  justify-content: space-between;
-  right: 0;
-  margin: 0 0 0 auto;
-  text-align: center;
-}
-#skip1:focus{
-	opacity: 100%;
-}
-#skip2:focus{
-	opacity: 100%;
-}
-
-.controls__dot {
-  display: inline-block;
-  width: 2.7rem;
-  height: 2.7rem;
-  border-radius: 50%;
-  outline: none;
-  background-color: #642373;
-  opacity: 0.5;
-  cursor: pointer;
-  transition: opacity 0.2s;
-  
-  &:not(:first-child) {
-    margin-left: 0.25em;
-  }
-
-  &:hover,
-  &:focus {
-    opacity: 1;
-  }
-}
-
-// Other styles
-p {
-  line-height: 1.5;
-}
-
-.wrapper {
-  margin-top: 4rem;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 60em;
-  min-height: 50vh;
-  height: 75vh;
-}
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.intro {
-  margin-top: 3.5em;
-  max-width: 42em;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-@media screen and (max-width: 920px){
-	.controls{
-		position: relative;
-		top:0;
-		left: -10rem;
-	}
-}
-@media screen and (max-width: 842px){
-	.controls{
-		position: relative;
-		top: 0;
-		left: -20rem;
-	}
-}
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
